@@ -99,6 +99,21 @@ public class EmployeeController {
 		
 	}
 	
+//	✅ Improved Version:
+	
+//	@DeleteMapping("/employee/{empId}")
+//	public ResponseEntity<String> deleteById(@PathVariable long empId) {
+//	    Optional<Employee> deleteEmp = employeeRepository.findById(empId);
+//	    if (deleteEmp.isPresent()) {
+//	        employeeRepository.delete(deleteEmp.get());
+//	        return ResponseEntity.ok("Employee with ID " + empId + " deleted successfully");
+//	    } else {
+//	        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+//	                .body("Employee with ID " + empId + " not found");
+//	    }
+//	}
+
+	
 	// my way
 //	@DeleteMapping("/employee")
 //	public String deleteAllEmp() {
